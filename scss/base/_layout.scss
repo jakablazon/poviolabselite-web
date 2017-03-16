@@ -122,6 +122,10 @@ section {
 	height: 1000px;
 	padding-top: 195px;
 
+	h2 {
+		margin-bottom: 150px;
+	}
+
 	p {
 		display: inline-block;
 		max-width: 680px;
@@ -135,6 +139,19 @@ section {
 	display: inline-block;
 	width: 615px;
 	margin-bottom: 130px;
+}
+
+.tabs {
+	display: inline-block;
+	width: 100%;
+
+	p {
+		display: none;
+
+		&.current {
+			display: inline-block;
+		}
+	}
 }
 
 .member {
@@ -159,6 +176,12 @@ section {
 		display: inline-block;
 		width: 100%;
 		font-size: 14px;
+	}
+
+	&.current {
+		h3 {
+			background: $brown;
+		}
 	}
 
 	&:hover {
