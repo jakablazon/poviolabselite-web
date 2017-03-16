@@ -1,0 +1,151 @@
+.btn {
+	background: $brown;
+	color: $black;
+	font-size: 16px;
+	display: inline-block;
+	padding: 11px 31px 9px;
+	text-transform: uppercase;
+}
+
+section {
+	float: left;
+	width: 100%;
+	border-bottom: 1px #252525 solid;
+
+	&.black-section {
+		background: $black;
+		height: 800px;
+		color: $white;
+	}
+}
+
+.fields-of-knowledge {
+	padding-top: 145px;
+
+	h2 {
+		margin-bottom: 160px;
+	}
+}
+
+.fok-logos {
+	display: inline-block;
+	width: 615px;
+	text-align: center;
+
+	> div {
+		display: inline-block;
+		width: 150px;
+		height: 50px;
+		margin-bottom: 70px;
+		position: relative;
+
+		span {
+			display: none;
+		}
+
+		&:hover {
+			span {
+				display: block;
+				position: absolute;
+				background: $brown;
+				color: $black;
+				font-size: 16px;
+				display: inline-block;
+				padding: 5px 10px 3px;
+				width: 120px;
+				left: 50%;
+				margin-left: -60px;
+				top: 7px;
+				text-transform: uppercase;
+				cursor: default;
+			}
+		}
+	}
+}
+
+.cycles {
+	padding-bottom: 60px;
+}
+
+.cycle {
+	display: inline-block;
+	width: 615px;
+	height: 220px;
+	margin: 290px 0 142px;
+	background: url('../images/bg/oval-holder.svg') no-repeat center center;
+
+	.td {
+		vertical-align: middle;
+		height: 220px;
+	}
+}
+
+.small-logos {
+	img {
+		margin: 0 30px;
+	}
+}
+
+.trusted-startups {
+	height: 997px;
+	padding-top: 150px;
+	border-bottom: 1px #ececec solid;
+
+	h2 {
+		margin-bottom: 225px;
+	}
+
+	.startups-logos {
+		img {
+			margin-bottom: 65px;
+		}
+	}
+}
+
+.team-section {
+	height: 1000px;
+	padding-top: 195px;
+
+	p {
+		display: inline-block;
+		max-width: 680px;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 32px;
+	}
+}
+
+.team {
+	display: inline-block;
+	width: 615px;
+	margin-bottom: 130px;
+}
+
+.member {
+	font-size: 18px;
+	font-weight: 500;
+
+	h3 {
+		display: inline-block;
+		margin: 0;
+		padding: 3px 15px 0;
+		line-height: 25px;
+		margin-bottom: 5px;
+	}
+
+	img {
+		margin-bottom: 23px;
+	}
+
+	small {
+		display: inline-block;
+		width: 100%;
+		font-size: 14px;
+	}
+
+	&:hover {
+		h3 {
+			background: $brown;
+		}
+	}
+}
