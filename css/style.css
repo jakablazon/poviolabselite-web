@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url("https://fonts.googleapis.com/css?family=Hind:300");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,500");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -534,20 +534,23 @@ p { font-size: 14px; line-height: 20px; margin-top: 0; }
 form { display: inline-block; width: 568px; margin-bottom: 60px; }
 form div { display: inline-block; width: 100%; background: #ffffff; margin-bottom: 10px; }
 form div input { float: left; width: 72%; background: none; border: 0; height: 46px; padding: 0 20px; color: #000; padding-top: 2px; font-size: 16px; }
-form div button { float: right; width: 23.5%; height: 42px; background: #d1b382; color: #000; font-size: 16px; border: 0; padding-top: 2px; margin: 2px; }
+form div button { float: right; width: 23.5%; height: 42px; background: #d1b382; color: #000; font-size: 16px; border: 0; padding-top: 2px; margin: 2px; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+form div button:hover { text-decoration: none; background: #c3a677; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-.btn { background: #d1b382; color: #000; font-size: 16px; display: inline-block; padding: 11px 31px 9px; text-transform: uppercase; }
+.btn { background: #d1b382; color: #000; font-size: 16px; display: inline-block; padding: 11px 31px 9px; text-transform: uppercase; font-weight: 500; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.btn:hover { text-decoration: none; background: #c3a677; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 section { float: left; width: 100%; border-bottom: 1px #252525 solid; }
 section.black-section { background: #000; height: 800px; color: #ffffff; }
 
 .fields-of-knowledge { padding-top: 145px; }
-.fields-of-knowledge h2 { margin-bottom: 160px; }
+.fields-of-knowledge h2 { margin-bottom: 10px; }
 
-.fok-logos { display: inline-block; width: 615px; text-align: center; }
+.fok-logos { display: inline-block; width: 615px; text-align: center; margin: 140px 0 50px; }
 .fok-logos > div { display: inline-block; width: 150px; height: 50px; margin-bottom: 70px; position: relative; }
-.fok-logos > div span { display: none; }
-.fok-logos > div:hover span { display: block; position: absolute; background: #d1b382; color: #000; font-size: 16px; display: inline-block; padding: 5px 10px 3px; width: 120px; left: 50%; margin-left: -60px; top: 7px; text-transform: uppercase; cursor: default; }
+.fok-logos > div span, .fok-logos > div a { display: none; }
+.fok-logos > div:hover span, .fok-logos > div:hover a { display: block; position: absolute; background: #d1b382; color: #000; font-size: 16px; display: inline-block; padding: 5px 10px 3px; width: 120px; left: 50%; margin-left: -60px; top: 7px; text-transform: uppercase; font-weight: 500; }
+.fok-logos > div:hover span:hover, .fok-logos > div:hover a:hover { text-decoration: none; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 .cycles { padding-bottom: 60px; }
 
@@ -571,10 +574,11 @@ section.black-section { background: #000; height: 800px; color: #ffffff; }
 .member small { display: inline-block; width: 100%; font-size: 14px; }
 .member:hover h3 { background: #d1b382; }
 
-header { float: left; width: 100%; height: 800px; padding: 295px 0 0; position: relative; }
-header h1 { display: inline-block; max-width: 700px; }
+header { float: left; width: 100%; height: 800px; padding: 240px 0 0; position: relative; }
+header h1 { font-weight: 500; margin-bottom: 140px; padding: 0 15px; }
+header p { display: inline-block; font-size: 16px; line-height: 24px; max-width: 580px; margin-bottom: 50px; }
 
-.logo { margin-bottom: 100px; }
+.logo { margin-bottom: 40px; }
 
 .top-header { position: absolute; top: 27px; left: 29px; font-size: 14.3px; color: #a2a2a2; }
 .top-header img { margin: 0 2px; }
@@ -592,7 +596,7 @@ footer small { font-size: 12px; color: #838383; }
   h2 { font-size: 18px; line-height: 30px; }
   section.black-section { height: auto; }
   .fields-of-knowledge { padding: 100px 0; }
-  .fields-of-knowledge h2 { margin-bottom: 80px; }
+  .fok-logos { margin: 80px 0 30px; }
   .cycle { margin: 100px 0 100px; }
   .small-logos img { margin: 0 10px; }
   .trusted-startups { height: auto; padding: 100px 0; }
@@ -605,9 +609,12 @@ footer small { font-size: 12px; color: #838383; }
   .copy { padding: 20px 0; text-align: center; } }
 @media (max-width: 768px) { .logo { width: 240px; margin-bottom: 50px; }
   header { height: auto; padding: 100px 0; }
-  .fok-logos { width: 100%; }
+  header h1 { margin-bottom: 60px; line-height: 28px; }
+  header p { font-size: 14px; line-height: 22px; max-width: 100%; margin-bottom: 30px; }
+  h1 { font-weight: 500; margin-bottom: 140px; padding: 0 15px; }
+  p { display: inline-block; font-size: 16px; line-height: 24px; max-width: 580px; margin-bottom: 50px; }
+  .fok-logos { width: 100%; margin-top: 40px; }
   .fields-of-knowledge { padding: 50px 0; }
-  .fields-of-knowledge h2 { margin-bottom: 40px; }
   .cycle { width: 100%; margin: 50px 0; background-size: 180px; }
   .trusted-startups { height: auto; padding: 50px 0; }
   .trusted-startups h2 { margin-bottom: 40px; }
