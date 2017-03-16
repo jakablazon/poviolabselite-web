@@ -566,7 +566,7 @@ section.black-section { background: #000; height: 800px; color: #ffffff; }
 .team { display: inline-block; width: 615px; margin-bottom: 130px; }
 
 .member { font-size: 18px; font-weight: 500; }
-.member h3 { display: inline-block; margin: 0; padding: 3px 15px 0; line-height: 25px; margin-bottom: 5px; font-size: 18px; font-weight: bold; }
+.member h3 { display: inline-block; margin: 0; padding: 3px 15px 0; line-height: 25px; margin-bottom: 15px; font-size: 18px; font-weight: bold; }
 .member img { margin-bottom: 23px; }
 .member small { display: inline-block; width: 100%; font-size: 14px; }
 .member:hover h3 { background: #d1b382; }
