@@ -41,3 +41,32 @@ form {
 		}
 	}
 }
+
+.thanks {
+	h4 {
+		display: inline-block;
+		font-size: 26px;
+  		font-weight: 500;
+  		color: $black;
+  		background: $brown;
+  		padding: 5px 30px 1px;
+  		margin: 0 0 40px;
+  		line-height: 30px;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	a {
+		display: inline-block;
+		color: $brown;
+		margin-bottom: 100px;
+		font-size: 16px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
