@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row">
         <div class="col-md-12 text-center">
           <h2>Trusted by the worlds most successful founders</h2>
-          
+
           <div class="team">
             <div class="row">
               <div class="col-md-4 col-sm-4">
@@ -171,18 +171,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <footer id="join-the-circle">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center" id="new-subscribe">
           <h3>Subscribe to get list of most talented software architects delivered to your email weekly</h3>
 
           <div class="spacer"></div>
 
-          <form>
+          <form id="form">
             <div>
-              <input type="email" name="" placeholder="Become part of the trust cycle">
+              <input type="email" name="email" id="subscribe-email" placeholder="Become part of the trust cycle">
               <button type="submit">SUBSCRIBE</button>
             </div>
             <small>Need immediate help? Reach to us here!</small>
           </form>
+
+          <div><img src="images/elite-footer.svg" alt=""></div>
+        </div>
+
+        <div class="col-md-12 text-center hidden" id="new-subscribed">
+          <div class="thanks">
+            <h4>THANKS FOR JOINING</h4>
+
+            <p>Your mail is confirmed, you will get a confirmation mail to <strong id="his-mail"></strong>.<br />
+            Our newsletter is prepared periodically every <strong>monday</strong>.</p>
+
+            <a onclick="reset();">JOIN WITH ANOTHER MAIL</a>
+          </div>
 
           <div><img src="images/elite-footer.svg" alt=""></div>
         </div>
