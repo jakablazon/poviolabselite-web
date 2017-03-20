@@ -8,6 +8,7 @@
 	font-weight: 500;
 	@include transition(all 0.3s ease-in-out);
 
+	&:focus,
 	&:hover {
 		text-decoration: none;
 		background: #c3a677;
@@ -37,9 +38,9 @@ section {
 
 .fok-logos {
 	display: inline-block;
-	width: 615px;
+	width: 100%;
 	text-align: center;
-	margin: 140px 0 50px;
+	margin: 20px 0 30px;
 
 	> div {
 		display: inline-block;
@@ -103,12 +104,11 @@ section {
 }
 
 .trusted-startups {
-	height: 997px;
+	height: 850px;
 	padding-top: 150px;
-	border-bottom: 1px #ececec solid;
 
 	h2 {
-		margin-bottom: 225px;
+		margin-bottom: 125px;
 	}
 
 	.startups-logos {
@@ -121,6 +121,7 @@ section {
 .team-section {
 	height: 1000px;
 	padding-top: 195px;
+	border-bottom: 1px #ececec solid;
 
 	h2 {
 		margin-bottom: 150px;
