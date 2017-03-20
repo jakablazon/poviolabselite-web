@@ -1,3 +1,9 @@
+@media (max-width: 1200px) {
+	.fok-logos > div {
+		width: 120px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.logo {
 		width: 280px;
@@ -13,7 +19,7 @@
 @media (max-width: 991px) {
 	header {
 		height: auto;
-		padding: 200px 0;
+		padding: 150px 0 100px;
 	}
 
 	h1 {
@@ -105,7 +111,7 @@
 
 	header {
 		height: auto;
-		padding: 100px 0;
+		padding: 100px 0 50px;
 
 		h1 {
 			margin-bottom: 60px;
