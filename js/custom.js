@@ -27,17 +27,19 @@ $(document).ready(function() {
   $("form#form").submit(function (event) {
     event.preventDefault();
     event.stopPropagation();
-    $.ajax({
-      method: "POST",
-      url: "form.php",
-      data: { email: $("#subscribe-email").val() }
-    }).done(function( msg ) {
-      $("#his-mail").html($("#subscribe-email").val());
-      $("#subscribe-email").val('');
-      $("#new-subscribed").removeClass("hidden");
-      $("#new-subscribe").addClass("hidden");
-    });
-  })
+    if($("#subscribe-email").val().indexOf("@") > 0) {
+      $.ajax({
+        method: "POST",
+        url: "form.php",
+        data: { email: $("#subscribe-email").val() }
+      }).done(function( msg ) {
+        $("#his-mail").html($("#subscribe-email").val());
+        $("#subscribe-email").val('');
+        $("#new-subscribed").removeClass("hidden");
+        $("#new-subscribe").addClass("hidden");
+      });
+    }
+  });
 });
 
 function reset() {
