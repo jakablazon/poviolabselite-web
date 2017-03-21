@@ -27,7 +27,7 @@ $(document).ready(function() {
   $("form#form").submit(function (event) {
     event.preventDefault();
     event.stopPropagation();
-    if($("#subscribe-email").val().indexOf("@") > 0) {
+    if($("#subscribe-email").val().indexOf("@") > 0 && $("#subscribe-email").val().indexOf(".") > 0) {
       $.ajax({
         method: "POST",
         url: "form.php",
@@ -38,6 +38,8 @@ $(document).ready(function() {
         $("#new-subscribed").removeClass("hidden");
         $("#new-subscribe").addClass("hidden");
       });
+    } else {
+      alert("You may have mistyped your email address!");
     }
   });
 });
