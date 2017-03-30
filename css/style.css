@@ -536,6 +536,7 @@ form div { display: inline-block; width: 100%; background: #ffffff; margin-botto
 form div input { float: left; width: 72%; background: none; border: 0; height: 46px; padding: 0 20px; color: #000; padding-top: 2px; font-size: 16px; }
 form div button { float: right; width: 23.5%; height: 42px; background: #d1b382; color: #000; font-size: 16px; border: 0; padding-top: 2px; margin: 2px; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 form div button:hover { text-decoration: none; background: #c3a677; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+form#form small > a { color: #838383; }
 
 .thanks h4 { display: inline-block; font-size: 26px; font-weight: 500; color: #000; background: #d1b382; padding: 5px 30px 1px; margin: 0 0 40px; line-height: 30px; }
 .thanks p { font-size: 16px; margin-bottom: 30px; }
